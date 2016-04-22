@@ -1,0 +1,93 @@
+*{
+  margin: 0px; padding: 0px;
+  font-family: 'Lobster', 'cursive', sans-serif; font-weight: normal;
+  max-width: 100% !important;
+}
+
+
+/* css dari artikel  */
+body .each_article{
+  margin: 20px auto;
+  width: 50%;
+}
+
+.each_article{
+  background-color: rgba(251, 146, 77, 0.9);
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+.waktu, .tag{
+  font-size: 11px;
+}
+
+/* css dari halaman login */
+
+
+/* css header*/
+#pertama{
+  height: 650px;
+  padding-top: 20px;
+}
+
+#logo{
+  display: block; width: 100px; margin: 0 auto;
+}
+
+#menu{
+  background-color: #00a651;
+  height: 50px; line-height: 50px;
+  font-size: 20px; margin-top: 20px;
+}
+
+#menu a{
+  display: block; text-align: center; color: white;
+}
+
+#menu a:hover{
+  background-color: #99f1c4;
+}
+
+.clear{
+  clear: both; /*mencegah terjadinya float*/
+}
+
+.konten{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.kolom_3{
+  width: 31%;
+  float:left;
+}
+
+.kolom_3_tengah{
+  margin: 0 3%;
+}
+
+#judul_single{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#isi_single{
+  margin: 10px 0 15px 0;
+}
+
+#tag_single{
+  font-size: 10px;
+}
+/* css footer */
+#footer{
+  background-color: #00a651;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+#error{
+  color: red;
+}
