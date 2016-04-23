@@ -153,7 +153,7 @@ h2 {
 #ketiga input, #ketiga textarea{
   display: block;
   width: 100%;
-  height: 30%;
+  height: 4%;
   margin-bottom: 12px;
   border: 2px solid #00a651;
 }
@@ -176,55 +176,6 @@ input[type="submit"]:hover, .panah_box:hover{
   max-width: 450px;
 }
 
-/*-- bagian setiap artikel */
-.panah_box{
-  width: 60px; height: 60px; line-height: 60px;
-  color: white; background-color: #00a651;
-  text-align: center;
-  font-size: 30px;
-  margin-top: 180px;
-}
-
-#artikel_box{
-  width: 800px;
-  margin: 0 20px;
-}
-
-.panah_box, #artikel_box, #artikel_box_kiri, #artikel_box_kanan{
-  float: left;
-}
-
-#artikel_box_kanan{
-  width: 500px;
-  height: 350px;
-}
-
-#artikel_box_kiri{
-  width: 280px; padding: 30px 10px 0 10px;
-  height: 253px;
-  background-color: #00a651;
-  color: white;
-}
-
-#artikel_box_kiri h3{
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-#artikel_box_kiri .deskripsi{
-  font-size: 18px;
-}
-
-#artikel_lain{
-  width: 450px; margin: 50px auto 0 auto;
-}
-
-#artikel_lain img{
-  display: block;
-  float: left;
-  width: 140px;
-  margin-left: 10px;
-}
 
 /*-- bagian form error */
 .error{
