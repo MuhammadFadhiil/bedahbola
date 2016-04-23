@@ -15,7 +15,7 @@ if($_SESSION['user']){
 <div id="pertama">
 
   <div id="header">
-    <a href="landing_page.php">
+    <a href="index.php">
       <img src="asset/Soccer-icon.png" id="logo" alt="">
     </a>
     <div id="menu">
