@@ -1,5 +1,6 @@
 <?php
 require_once "core/init.php";
+
 ?>
 
 <head>
@@ -26,8 +27,8 @@ require_once "core/init.php";
         <img src="asset/1.jpg" id="nav-icon" alt="" onclick="toggleMenu();">
         <div id="menu-text" onclick="toggleMenu();">Menu</div>
         <div class="konten" id="menu-3">
-            <a href="#pertama" class="kolom_3">Home</a>
-            <a href="#kedua" class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('kedua')">Artikel</a>
+            <a href="#kedua" class="kolom_3" onclick="return smoothScroll('kedua')">Artikel</a>
+            <a href="login.php" class="kolom_3 kolom_3_tengah">Login</a>
             <a href="#ketiga" class="kolom_3" onclick="return smoothScroll('ketiga')">Kontak</a>
         </div>
       </div>
@@ -59,7 +60,7 @@ require_once "core/init.php";
       </div>
 
       <div class="kolom_3 kolom_3_tengah">
-        <a href="setiap_artikel.html">
+        <a href="futsal.php">
           <div class="gambar_artikel">
             <img src="asset/futsal.jpg" alt="" />
             <p> Futsal </p>

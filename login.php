@@ -2,7 +2,7 @@
 require_once "core/init.php";
 
 if($_SESSION['user']){
-  header('Location: bola.php');
+  header('Location: index.php');
 }else{
 
 $error = '';
@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 
     if(cek_data($nama, $pass)){
       $_SESSION['user'] = $nama;
-      header('Location: bola.php');
+      header('Location: index.php');
     }else {
       $error = 'ada masalah saat login';
     }

@@ -20,7 +20,7 @@ if($_SESSION['user']){
     </a>
     <div id="menu">
       <div class="konten" id="menu-3">
-          <a href="bola.php" class="kolom_3">Artikel</a>
+          <a href="index.php" class="kolom_3">Home</a>
           <a href="tambah.php" class="kolom_3 kolom_3_tengah">Tambah</a>
 
           <?php if($login == true): ?>

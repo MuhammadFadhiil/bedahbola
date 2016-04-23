@@ -10,18 +10,18 @@ $articles = tampilkan();
 
 require_once "view/header.php";
 
-echo "  <script>\n";
-echo "    function toggleMenu() {\n";
-echo "      var menu = document.getElementById('menu-3');\n";
-echo "      menu.classList.toggle('menu-open');\n";
-echo "    }\n";
-echo "  </script>\n";
-echo "\n";
-
  ?>
 
 <?php while($row = mysqli_fetch_assoc($articles)):?>
-  
+
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById('menu-3');
+        menu.classList.toggle('menu-open');
+      }
+    </script>
+
 <div class="each_article">
   <h3><a href="single.php?id=<?= $row['id']; ?>"><?= $row['judul']; ?> </a></h3>
   <p>
@@ -35,13 +35,9 @@ echo "\n";
     <a href="delete.php?id=<?= $row['id']; ?>"> Hapus </a>
   <?php endif; ?>
 </div>
+    <script src="bedahbola.js"> </script>
 <?php endwhile; ?>
 
  <?php
- require_once "view/footer.php"
-  ?>
-
-  <?php
-    echo "<script src=\"bedahbola.js\"> </script>\n";
-    echo "\n";
-  ?>
+  require_once "view/footer.php"
+ ?>
