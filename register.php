@@ -13,11 +13,11 @@ if(isset($_POST['submit'])){
 
   if(!empty($nama) && !empty($pass)){
 
-    if(cek_data($nama, $pass)){
+    if(register_user($nama, $pass)){
       $_SESSION['user'] = $nama;
       header('Location: index.php');
     }else {
-      $error = 'ada masalah saat login';
+      $error = 'ada masalah saat daftar';
     }
 
   }else {
@@ -39,12 +39,7 @@ require_once "view/header.php";
 
      <div id="error"><?=$error; ?><br><br>
 
-     <input type="submit" name="submit" value="submit"><br><br>
-
-     <p>Anda belum terdaftar klik
-       <a href="register.php">Daftar</a>
-     </p>
-
+     <input type="submit" name="submit" value="submit">
    </form>
  </div>
 

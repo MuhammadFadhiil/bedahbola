@@ -39,7 +39,7 @@ require_once "core/init.php";
     <div class="konten">
 
       <div id="SD">
-        <h1>Selamat datang di <br> website <br> bedahbola.com</h1>
+        <h1>Lo ngaku paling ngerti sepakbola? <br> Mau bikin analisa lo sendiri? <br> Disini tempatnya!! </h1>
         <a href="#kedua" onclick="return smoothScroll('kedua')"> Artikel </a>
       </div>
 
