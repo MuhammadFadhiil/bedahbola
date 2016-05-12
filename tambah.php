@@ -29,7 +29,6 @@ require_once "view/header.php";
 
  ?>
 
-
 <form action="" method="post">
   <label for="judul"> Judul </label><br>
   <input type="text" name="judul" value=""><br><br>

@@ -29,27 +29,25 @@ require_once "view/header.php";
 
  ?>
 
- <div id="login">
-   <form action="" method="post">
-     <label for="nama"> username </label><br>
-     <input type="text" name="nama" value=""><br><br>
+ <div class="form">
 
-     <label for="password"> password </label><br>
-     <input type="password" name="password" value=""><br><br>
+         <div id="login">
+             <form action="" method="post">
+               <label for="nama"> username </label><br>
+               <input type="text" name="nama" value=""><br><br>
 
-     <div id="error"><?=$error; ?><br><br>
+               <label for="password"> password </label><br>
+               <input type="password" name="password" value=""><br><br>
 
-     <input type="submit" name="submit" value="submit"><br><br>
+             <div id="error"><?=$error; ?><br><br>
 
-     <p>Anda belum terdaftar klik
-       <a href="register.php">Daftar</a>
-     </p>
+               <input type="submit" name="submit" value="submit"><br><br>
+             </form>
+           </div>
+         </div>
 
-   </form>
- </div>
-
- <?php
- require_once "view/footer.php"
-  ?>
+<?php
+require_once "view/footer.php"
+ ?>
 
 <?php } ?>
