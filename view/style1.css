@@ -1,93 +1,119 @@
-*{
-  margin: 0px; padding: 0px;
-  font-family: 'Lobster', 'cursive', sans-serif; font-weight: normal;
-  max-width: 100% !important;
-}
+
+  *{
+    margin: 0px; padding: 0px;
+    font-family: 'cursive', sans-serif; font-weight: normal;
+    max-width: 100% !important;
+  }
 
 
-/* css dari artikel  */
-body .each_article{
-  margin: 20px auto;
-  width: 50%;
-}
+  /* css dari artikel  */
+  body .each_article{
+    margin: 20px auto;
+    width: 50%;
+  }
 
-.each_article{
-  background-color: rgba(251, 146, 77, 0.9);
-  color: white;
-  padding: 5px;
-  margin: 5px;
-}
+  .each_article{
+    background-color: rgba(227, 132, 129, 0.45);
+    padding: 5px;
+    margin: 5px;
+  }
 
-.waktu, .tag{
-  font-size: 11px;
-}
+  .waktu, .tag{
+    font-size: 11px;
+  }
 
+  /* css header*/
+  #pertama{
+    height: 650px;
+    padding-top: 20px;
+  }
 
-/* css dari halaman login */
+  #logo{
+    display: block; width: 100px; margin: 0 auto;
+  }
 
-/* css header*/
-#pertama{
-  height: 650px;
-  padding-top: 20px;
-}
+  #menu{
+    background-color: #00a651;
+    height: 50px; line-height: 50px;
+    font-size: 20px; margin-top: 20px;
+  }
 
-#logo{
-  display: block; width: 100px; margin: 0 auto;
-}
+  #menu a{
+    display: block; text-align: center; color: white;
+  }
 
-#menu{
-  background-color: #00a651;
-  height: 50px; line-height: 50px;
-  font-size: 20px; margin-top: 20px;
-}
+  /* css dari halaman login */
+  body #login{
+    margin: 20px auto;
+  }
 
-#menu a{
-  display: block; text-align: center; color: white;
-}
+  #login{
+    background-color: rgba(0, 166, 81, 0.5);
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+  }
 
-#menu a:hover{
-  background-color: #99f1c4;
-}
+  #login button{
+    padding:10px;
+    font-size:20px;
+    width:200px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+  }
 
-.clear{
-  clear: both; /*mencegah terjadinya float*/
-}
+  #login button:hover{
+    background-color: white;
+    color: #00a651;
+  }
 
-.konten{
-  width: 960px;
-  margin: 0 auto;
-}
+  #menu a:hover{
+    background-color: #99f1c4;
+  }
 
-.kolom_3{
-  width: 31%;
-  float:left;
-}
+  .clear{
+    clear: both; /*mencegah terjadinya float*/
+  }
 
-.kolom_3_tengah{
-  margin: 0 3%;
-}
+  .konten{
+    width: 960px;
+    margin: 0 auto;
+  }
 
-#judul_single{
-  font-size: 15px;
-  font-weight: bold;
-}
+  .kolom_3{
+    width: 31%;
+    float:left;
+  }
 
-#isi_single{
-  margin: 10px 0 15px 0;
-}
+  .kolom_3_tengah{
+    margin: 0 3%;
+  }
 
-#tag_single{
-  font-size: 10px;
-}
-/* css footer */
-#footer{
-  background-color: #00a651;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-}
+  #judul_single{
+    font-size: 15px;
+    font-weight: bold;
+  }
 
-#error{
-  color: red;
-}
+  #isi_single{
+    margin: 10px 0 15px 0;
+  }
+
+  #tag_single{
+    font-size: 10px;
+  }
+  /* css footer */
+  #footer{
+    background-color: #00a651;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+
+  #error{
+    color: red;
+  }

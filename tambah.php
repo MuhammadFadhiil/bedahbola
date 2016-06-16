@@ -15,7 +15,7 @@ if (isset($_POST['submit'])){
   if(!empty($judul) && !empty($konten)){
 
     if(tambah_data($judul, $konten, $tag)){
-      header('Location: bola.php');
+      header('Location: index.php');
     }else {
       $error = 'ada masalah saat tambah data';
     }
