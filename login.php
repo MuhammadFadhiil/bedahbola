@@ -28,26 +28,23 @@ if(isset($_POST['submit'])){
 require_once "view/header.php";
 
  ?>
+<div id="login">
+  <form action="" method="post">
+    <label for="nama"> username </label><br>
+    <input type="text" name="nama" value=""><br><br>
 
- <div class="form">
+    <label for="password"> password </label><br>
+    <input type="password" name="password" value=""><br><br>
 
-         <div id="login">
-             <form action="" method="post">
-               <label for="nama"> username </label><br>
-               <input type="text" name="nama" value=""><br><br>
+  <div id="error"><?=$error; ?><br><br>
 
-               <label for="password"> password </label><br>
-               <input type="password" name="password" value=""><br><br>
-
-             <div id="error"><?=$error; ?><br><br>
-
-               <input type="submit" name="submit" value="submit"><br><br>
-             </form>
-           </div>
-         </div>
+    <input type="submit" name="submit" value="submit"><br><br>
+  </form>
+  </div>
+</div>
 
 <?php
-require_once "view/footer.php"
- ?>
+ require_once "view/footer.php"
+?>
 
 <?php } ?>

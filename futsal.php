@@ -23,18 +23,32 @@ require_once "view/header.php";
       }
     </script>
 
-<div class="each_article">
-  <h3><a href="single.php?id=<?= $row['id']; ?>"><?= $row['judul']; ?> </a></h3>
-  <p>
-    <?php echo excerpt($row['isi']); ?>
-  </p>
-  <p class="waktu"> <?php echo $row['waktu']; ?>  </p>
-  <p class="tag"> Tag: <?php echo $row['tag']; ?> </p>
+<head>
+<style>
+body {
+  background: url('asset/as.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;}
+</style>
+</head>
 
-  <?php if($login == true):  ?>
-    <a href="edit.php?id=<?= $row['id']; ?>"> Edit </a>
-    <a href="delete.php?id=<?= $row['id']; ?>"> Hapus </a>
-  <?php endif; ?>
+<div id="futsal">
+  <div class="each_article">
+    <h3><a href="single.php?id=<?= $row['id']; ?>"><?= $row['judul']; ?> </a></h3>
+    <p>
+      <?php echo excerpt($row['isi']); ?>
+    </p>
+    <p class="waktu"> <?php echo $row['waktu']; ?>  </p>
+    <p class="tag"> Tag: <?php echo $row['tag']; ?> </p>
+
+    <?php if($login == true):  ?>
+      <a href="edit.php?id=<?= $row['id']; ?>"> Edit </a>
+      <a href="delete.php?id=<?= $row['id']; ?>"> Hapus </a>
+    <?php endif; ?>
+  </div>
 </div>
     <script src="bedahbola.js"> </script>
 <?php endwhile; ?>

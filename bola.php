@@ -21,7 +21,17 @@ require_once "view/header.php";
         menu.classList.toggle('menu-open');
       }
     </script>
-
+<head>
+<style>
+body {
+  background: url('asset/as.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;}
+</style>
+</head>
 <div id="bola">
   <div class="each_article">
     <h3><a href="single.php?id=<?= $row['id']; ?>"><?= $row['judul']; ?> </a></h3>

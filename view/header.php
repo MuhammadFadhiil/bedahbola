@@ -20,15 +20,13 @@ if($_SESSION['user']){
     </a>
     <div id="menu">
       <div class="konten" id="menu-3">
-          <a href="index.php" class="kolom_3">Home</a>
-          <a href="tambah.php" class="kolom_3 kolom_3_tengah">Tambah</a>
-
-          <?php if($login == true): ?>
+        <a href="index.php" class="kolom_3">Home</a>
+        <a href="tambah.php" class="kolom_3 kolom_3_tengah">Tambah</a>
+        <?php if($login == true): ?>
             <a href="logout.php" class="kolom_3">Logout</a>
-          <?php else: ?>
+        <?php else: ?>
             <a href="login.php" class="kolom_3">Login</a>
-          <?php endif; ?>
-
+        <?php endif; ?>
       </div>
     </div>
   </div>
